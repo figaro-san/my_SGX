@@ -1,0 +1,118 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-m64",
+      "-O0",
+      "-g",
+      "-fPIC",
+      "-Wno-attributes",
+      "-IApp",
+      "-I/opt/intel/sgxsdk/include",
+      "-DDEBUG",
+      "-UNDEBUG",
+      "-UEDEBUG",
+      "-c",
+      "-o",
+      "App/Enclave_u.o",
+      "App/Enclave_u.c"
+    ],
+    "directory": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed",
+    "file": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/App/Enclave_u.c",
+    "output": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/App/Enclave_u.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-m64",
+      "-O0",
+      "-g",
+      "-fPIC",
+      "-Wno-attributes",
+      "-IApp",
+      "-I/opt/intel/sgxsdk/include",
+      "-DDEBUG",
+      "-UNDEBUG",
+      "-UEDEBUG",
+      "-std=c++11",
+      "-c",
+      "-o",
+      "App/App.o",
+      "App/App.cpp"
+    ],
+    "directory": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed",
+    "file": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/App/App.cpp",
+    "output": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/App/App.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-m64",
+      "-O0",
+      "-g",
+      "-fPIC",
+      "-Wno-attributes",
+      "-IApp",
+      "-I/opt/intel/sgxsdk/include",
+      "-DDEBUG",
+      "-UNDEBUG",
+      "-UEDEBUG",
+      "-std=c++11",
+      "-c",
+      "-o",
+      "App/error_print.o",
+      "App/error_print.cpp"
+    ],
+    "directory": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed",
+    "file": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/App/error_print.cpp",
+    "output": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/App/error_print.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-m64",
+      "-O0",
+      "-g",
+      "-nostdinc",
+      "-fvisibility=hidden",
+      "-fpie",
+      "-fstack-protector",
+      "-IEnclave",
+      "-I/opt/intel/sgxsdk/include",
+      "-I/opt/intel/sgxsdk/include/tlibc",
+      "-I/opt/intel/sgxsdk/include/stlport",
+      "-c",
+      "-o",
+      "Enclave/Enclave_t.o",
+      "Enclave/Enclave_t.c"
+    ],
+    "directory": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed",
+    "file": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/Enclave/Enclave_t.c",
+    "output": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/Enclave/Enclave_t.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-m64",
+      "-O0",
+      "-g",
+      "-nostdinc",
+      "-fvisibility=hidden",
+      "-fpie",
+      "-fstack-protector",
+      "-IEnclave",
+      "-I/opt/intel/sgxsdk/include",
+      "-I/opt/intel/sgxsdk/include/tlibc",
+      "-I/opt/intel/sgxsdk/include/stlport",
+      "-std=c++03",
+      "-nostdinc++",
+      "-c",
+      "-o",
+      "Enclave/Enclave.o",
+      "Enclave/Enclave.cpp"
+    ],
+    "directory": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed",
+    "file": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/Enclave/Enclave.cpp",
+    "output": "/home/azureuser/Develop/sgx/my_SGX/SGX_Smashed/Enclave/Enclave.o"
+  }
+]

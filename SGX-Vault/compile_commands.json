@@ -1,0 +1,54 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-m64",
+      "-O2",
+      "-fPIC",
+      "-Wno-attributes",
+      "-IServer_App",
+      "-I/opt/intel/sgxsdk/include",
+      "-Icommon",
+      "-Iinclude",
+      "-DNDEBUG",
+      "-UEDEBUG",
+      "-UDEBUG",
+      "-std=c++11",
+      "-D_LARGEFILE64_SOURCE",
+      "-D_FILE_OFFSET_BITS=64",
+      "-c",
+      "-o",
+      "Server_App/server_app.o",
+      "Server_App/server_app.cpp"
+    ],
+    "directory": "/home/azureuser/Develop/sgx/SGX-Vault",
+    "file": "/home/azureuser/Develop/sgx/SGX-Vault/Server_App/server_app.cpp",
+    "output": "/home/azureuser/Develop/sgx/SGX-Vault/Server_App/server_app.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-m64",
+      "-O2",
+      "-nostdinc",
+      "-fvisibility=hidden",
+      "-fpie",
+      "-fstack-protector",
+      "-IServer_Enclave",
+      "-I/opt/intel/sgxsdk/include",
+      "-I/opt/intel/sgxsdk/include/tlibc",
+      "-I/opt/intel/sgxsdk/include/stlport",
+      "-I/opt/intel/sgxsdk/include/libcxx",
+      "-Icommon",
+      "-std=c++11",
+      "-nostdinc++",
+      "-c",
+      "-o",
+      "Server_Enclave/server_enclave.o",
+      "Server_Enclave/server_enclave.cpp"
+    ],
+    "directory": "/home/azureuser/Develop/sgx/SGX-Vault",
+    "file": "/home/azureuser/Develop/sgx/SGX-Vault/Server_Enclave/server_enclave.cpp",
+    "output": "/home/azureuser/Develop/sgx/SGX-Vault/Server_Enclave/server_enclave.o"
+  }
+]

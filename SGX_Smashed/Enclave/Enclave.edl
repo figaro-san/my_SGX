@@ -1,0 +1,18 @@
+enclave
+{
+  include "../include/Smash.hpp"
+
+	trusted
+	{
+		/*These are ECALL defines.*/
+		public test_struct_t sgx_bleed();
+
+		public void init_controlled_channel_attack([out]uint64_t* address1, [out]uint64_t* address2);
+		public void controlled_channel_attack();
+
+	};
+	untrusted
+	{
+		void ocall_print_binary([in, size=data_len]uint8_t* data, size_t data_len);
+	};
+};
